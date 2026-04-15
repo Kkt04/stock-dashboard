@@ -1,11 +1,11 @@
-# 📈 Stock Data Intelligence Dashboard
+# Stock Data Intelligence Dashboard
 
 A mini financial data platform built with **FastAPI + SQLite + Pandas + Chart.js**  
 for the JarNox Software Intern Assignment.
 
 ---
 
-## 🏗️ Project Structure
+## Project Structure
 
 ```
 stock-dashboard/
@@ -29,7 +29,7 @@ stock-dashboard/
 
 ---
 
-## ⚙️ Setup & Run
+## Setup & Run
 
 ### Option 1 — Local (Python)
 
@@ -51,7 +51,7 @@ docker-compose up --build
 
 ---
 
-## 🔌 API Endpoints
+## API Endpoints
 
 | Method | Endpoint | Description |
 |--------|----------|-------------|
@@ -68,7 +68,7 @@ Interactive Swagger docs: **http://localhost:8000/docs**
 
 ---
 
-## 📊 Metrics Explained
+## Metrics Explained
 
 | Metric | Formula |
 |--------|---------|
@@ -81,7 +81,7 @@ Interactive Swagger docs: **http://localhost:8000/docs**
 
 ---
 
-## 🧩 Tech Stack
+## Tech Stack
 
 - **Python 3.11** with **FastAPI** — async REST API
 - **SQLite** — lightweight persistent storage
@@ -91,7 +91,7 @@ Interactive Swagger docs: **http://localhost:8000/docs**
 
 ---
 
-## 💡 Key Design Decisions
+## Key Design Decisions
 
 1. **GBM Simulation** — Geometric Brownian Motion generates realistic price paths instead of flat random walks.
 2. **Single-file frontend** — Zero build tools needed; drop `index.html` anywhere and open.
@@ -100,12 +100,12 @@ Interactive Swagger docs: **http://localhost:8000/docs**
 
 ---
 
-## 🚀 Optional Enhancements Included
+## Optional Enhancements Included
 
-- ✅ Swagger / OpenAPI docs (`/docs`)
-- ✅ Docker + docker-compose
-- ✅ Correlation between stocks
-- ✅ Volatility score (custom metric)
-- ✅ Market Sentiment Index (custom metric)
-- ✅ Top Gainers / Losers
-- ✅ Multi-period chart filters (30D / 90D / 180D)# stock-dashboard
+- Swagger / OpenAPI docs (`/docs`)
+- Docker + docker-compose
+- Correlation between stocks
+- Volatility score (custom metric)
+- Market Sentiment Index (custom metric)
+- Top Gainers / Losers
+- Multi-period chart filters (30D / 90D / 180D)# stock-dashboard
