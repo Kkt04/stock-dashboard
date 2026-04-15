@@ -5,7 +5,11 @@ Database initialization and connection management using SQLite.
 import sqlite3
 import os
 
-DB_PATH = os.path.join(os.path.dirname(__file__), "..", "data", "stocks.db")
+# Use /tmp for Vercel serverless, local data folder otherwise
+if os.environ.get("VERCEL"):
+    DB_PATH = "/tmp/stocks.db"
+else:
+    DB_PATH = os.path.join(os.path.dirname(__file__), "..", "data", "stocks.db")
 
 
 def get_connection() -> sqlite3.Connection:
@@ -51,6 +55,7 @@ def init_db():
     if count == 0:
         print("Seeding database with mock data...")
         from scripts.seed_data import seed
+
         seed(conn)
         print("Database seeded.")
 
