@@ -1,7 +1,6 @@
 # Stock Data Intelligence Dashboard
 
-A mini financial data platform built with **FastAPI + SQLite + Pandas + Chart.js**  
-for the JarNox Software Intern Assignment.
+A mini financial data platform built with **FastAPI + SQLite + Pandas + Chart.js**   for the JarNox Software Intern Assignment.
 
 ---
 
